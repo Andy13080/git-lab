@@ -1,0 +1,159 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{indentfirst}
+
+\begin{document}
+
+% --- TITLE PAGE ---
+
+
+\begin{center}
+
+{\large
+Министерство науки и высшего образования\\
+Российской Федерации
+}
+
+\vspace{0.7cm}
+
+{\large\bfseries
+ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ\\
+АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ\\
+УЧРЕЖДЕНИЕ\\
+ВЫСШЕГО ОБРАЗОВАНИЯ
+}
+
+\vspace{0.5cm}
+
+{\large\bfseries
+«НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ\\
+УНИВЕРСИТЕТ ИТМО»
+}
+
+\vspace{0.45cm}
+
+{\normalsize
+Факультет систем управления и робототехники
+}
+
+\vspace{2.8cm}
+
+{\Large\bfseries
+ЛАБОРАТОРНАЯ РАБОТА №0
+}
+
+\vspace{0.3cm}
+
+{\normalsize
+по дисциплине «Машинное обучение»
+}
+
+\vspace{0.8cm}
+
+{\LARGE
+Знакомство с git и GitHub
+}
+
+\vfill
+
+\begin{flushright}
+\begin{minipage}{0.43\textwidth}
+
+\textbf{Выполнили:}
+
+Студент: Нколе Эндрю,\\
+\textbf{Группа: R3343}
+
+\vspace{0.3cm}
+
+\textbf{Преподаватель:}
+
+ Поляк Марк Дмитриевич
+
+\end{minipage}
+\end{flushright}
+
+\vfill
+
+Санкт-Петербург\\
+2026
+
+\end{center}
+
+\end{titlepage}
+
+
+\tableofcontents
+\newpage
+
+% --- TASK TEXT ---
+\section{Текст задания}
+\textbf{Цель:} поразмышлять о своих целях и задачах на текущий семестр. Создать файлы в репозитории, освоить работу с Git из командной строки, подготовить отчет.
+
+\textbf{Задание 1:} Создать файл goals.md, добавить заголовки, текст о своем опыте, нумерованный и ненумерованный списки, создать папку resources с изображением.
+
+\textbf{Задание 2:} Клонировать репозиторий, создать info.md, выполнить коммиты, создать .gitignore и объяснить результат игнорирования файла data/dataset.csv.
+
+\textbf{Задание 3:} Подготовить отчет в формате PDF и загрузить его в репозиторий.
+
+% --- TASK 1 ---
+\section{Результат выполнения Задания 1}
+\subsection{Содержимое файла goals.md}
+\begin{verbatim}
+# Мой опыт
+
+Я начал изучать программирование в университете. До этого я немного программировал на Python и делал простые студенческие проекты. Мой профиль на GitHub: Andy13080(https://github.com/Andy13080/git-lab.git). Теперь я хочу научиться лучше работать в команде и освоить Git.
+
+# Мои цели
+
+1. Научиться уверенно пользоваться Git и GitHub.
+
+2. Научиться готовить отчёты в LaTeX.
+
+3. Научиться управлять проектом в репозитории.
+
+## Задачи
+
+- Изучить основные команды Git: add, commit, push, pull.
+
+- Понять, как работает .gitignore.
+
+- Подготовить отчёт в LaTeX и загрузить его в репозиторий.
+
+- Научиться форматировать документы в Markdown.
+
+- Регулярно делать коммиты с понятными сообщениями.
+\end{verbatim}
+\textit{Примечание: Изображение было успешно загружено в папку resources и добавлено в файл goals.md.}
+
+% --- TASK 2 ---
+\section{Результат выполнения Задания 2}
+\subsection{Содержимое файла info.md}
+\begin{verbatim}
+НКОЛЕ ЭНДРЮ
+
+Windows 11 Home
+
+2026-09-18 21:20
+\end{verbatim}
+
+\subsection{Содержимое файла .gitignore}
+\begin{verbatim}
+data/
+\end{verbatim}
+
+\subsection{Объяснение результата попытки закоммитить файл data/dataset.csv}
+В файл .gitignore была добавлена строка \texttt{data/}. Это указывает Git игнорировать всё содержимое папки data. Поэтому при выполнении команды \texttt{git add data/dataset.csv} Git проигнорировал этот файл, и он не был добавлен в индекс. Соответственно, коммит с этим файлом не создался. Это доказывает, что .gitignore работает корректно.
+
+% --- CONCLUSION ---
+\section{Вывод}
+В ходе выполнения данной лабораторной работы я ознакомился с системой контроля версий Git и сервисом GitHub. Я научился создавать репозитории, работать с файлами через веб-интерфейс и командную строку, а также освоил базовые команды Git (add, commit, push) и настройку .gitignore.
+
+\end{document}
